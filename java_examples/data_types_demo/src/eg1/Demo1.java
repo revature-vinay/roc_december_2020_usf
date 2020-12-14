@@ -35,6 +35,11 @@ public class Demo1 {
 		
 		double d=23.4455;
 		System.out.println("d = "+d);
+		
+		char c='M';
+		System.out.println("c = "+c);
+		
+	//	boolean s=x>=10;
 
 	}
 
