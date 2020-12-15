@@ -124,7 +124,7 @@ ClassName obj=new ConstructorName();
 
 *the java compiler creates 
 a default(visibility) non parameterised empty constructor in all the classes
-which it will take off when a pragrammer creates one of his own constructor.
+which it will take off when a programmer creates one of his own constructor.
 
 * as per the best coding practices its highly recommended to have a
 public non parametrised empty or non empty constructor in all the classes.
