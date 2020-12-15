@@ -8,7 +8,9 @@ public class CalculatorMain {
 		
 		Calculator c2=new Calculator(100);
 		
-		Calculator c3=new Calculator(199, 99);
+		int a=999;
+		int b=1000;
+		Calculator c3=new Calculator(a, b);
 		System.out.println("result of c3.add() : "+c3.add());
 		
 		System.out.println("result of c2.add() : "+c2.add());
