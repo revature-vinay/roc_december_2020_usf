@@ -51,3 +51,9 @@ public class PlayerMain {
 	}
 
 }
+
+/* 1)Try runnning the same app and get idea of what is going on and where
+ * 2)Look into the recording and parallely try to recreate  the whole app by yourself from scratch
+ * 3)Complete update and delete operations and complete PlayerSearchDAOImpl
+ * 
+*/
