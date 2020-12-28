@@ -15,10 +15,14 @@ public class PlayerSearchServiceImpl implements PlayerSearchService {
 	@Override
 	public Player getPlayerById(int id) throws BusinessException {
 		Player player = null;
+		System.out.println("PlayerService within getPlayerById() with id = "+id);
 		if (id > 99 && id < 1000) {
 			// code here for DAO
+			System.out.println("In if before DAO call");
 			player = playerSearchDAO.getPlayerById(id);
+		
 		} else {
+			System.out.println("In else before throw");
 			throw new BusinessException("Entered Player Id " + id + " is INVALID......");
 		}
 		return player;

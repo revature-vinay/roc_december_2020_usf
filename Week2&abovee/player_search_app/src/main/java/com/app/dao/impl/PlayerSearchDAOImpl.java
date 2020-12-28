@@ -17,12 +17,15 @@ public class PlayerSearchDAOImpl implements PlayerSearchDAO {
 	@Override
 	public Player getPlayerById(int id) throws BusinessException {
 		Player player = null;
+		System.out.println("In DAO within getPlayerById() with id = "+id);
 		try (Connection connection = PostresqlConnection.getConnection()) {
 			String sql = "select name,age,gender,teamname,contact,dob from roc_revature.player where id=?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1, id);
 			ResultSet resultSet = preparedStatement.executeQuery();
+			System.out.println("Query Executed");
 			if (resultSet.next()) {
+				System.out.println("If in DAO");
 				player = new Player();
 				player.setId(id);
 				player.setName(resultSet.getString("name"));
@@ -32,9 +35,11 @@ public class PlayerSearchDAOImpl implements PlayerSearchDAO {
 				player.setTeamname(resultSet.getString("teamname"));
 				player.setDob(resultSet.getDate("dob"));
 			} else {
+				System.out.println("else in dao");
 				throw new BusinessException("No Player found with Id " + id);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println("exception in DAO");
 			System.out.println(e); // Take off this line when app is live
 			throw new BusinessException("Internal error occured contact SYSADMIN ");
 		}

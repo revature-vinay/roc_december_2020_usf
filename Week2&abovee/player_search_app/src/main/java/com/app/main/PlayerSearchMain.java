@@ -36,6 +36,7 @@ public class PlayerSearchMain {
 
 			switch (ch) {
 			case 1:
+				System.out.println("case-1 was selected");
 				System.out.println("Enter Player Id to get Player Details... ");
 				try {
 					int id = Integer.parseInt(sc.nextLine());
