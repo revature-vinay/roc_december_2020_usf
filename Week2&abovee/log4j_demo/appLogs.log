@@ -1,0 +1,6 @@
+{INFO}  INFO com.app.main.HelloLog4j   Hello from INFO       29-Dec-2020 Tuesday IST 21:40:45
+{WARN}  WARN com.app.main.HelloLog4j   Hello from WARN       29-Dec-2020 Tuesday IST 21:40:45
+{ERROR} ERROR com.app.main.HelloLog4j   Hello from ERROR       29-Dec-2020 Tuesday IST 21:40:45
+{FATAL} FATAL com.app.main.HelloLog4j   Hello from FATAL       29-Dec-2020 Tuesday IST 21:40:45
+{INFO}  INFO com.app.service.HelloLogService   hello from log service helloLog()       29-Dec-2020 Tuesday IST 21:40:45
+{INFO}  INFO com.app.service.HelloLogService   bye bye from log service helloLog()       29-Dec-2020 Tuesday IST 21:40:45
